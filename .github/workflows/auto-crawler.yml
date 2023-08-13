@@ -9,8 +9,7 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
+    runs-on: Linux
     strategy:
       matrix:
         python-version: [3.7]
@@ -43,12 +42,12 @@ jobs:
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
     - name: Commits
       run: |
-        git config --local user.email "kipper098@gmail.com"
+        git config --local user.email "ray5273@naver.com"
         git config --local user.name "Auto_Crawler_Bot"
         git add --all
         git commit -m "Bot - Auto Crawl | $(date -d '+9 hour' +'%Y-%m-%d %H:%M:%S')"
     - name: Push
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@feature/fork-action-test
       with:
         branch: 'master'
         github_token: ${{ secrets.MY_GITHUB_TOKEN }}
