@@ -56,8 +56,8 @@ jobs:
         git add --all
         git commit -m "Bot - Auto Crawl | $(date -d '+9 hour' +'%Y-%m-%d %H:%M:%S')"
     - name: Push
-      uses: ad-m/github-push-action@feature/fork-action-test
+      uses: ad-m/github-push-action@master
       with:
-        branch: 'master'
+        branch: 'feature/fork-action-test'
         github_token: ${{ secrets.MY_GITHUB_TOKEN }}
         
