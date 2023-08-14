@@ -255,7 +255,8 @@ class DanawaCrawler:
                 
             
             productData = dataList.pop(0)
-            dataList.sort(key= lambda x: x[1])
+            dataList.sort(key=lambda x: x[1] if isinstance(x[1], (int, float)) else float('inf'))
+            # dataList.sort(key= lambda x: x[1])
             dataList.insert(0, productData)
                 
             with open(dataPath, 'w', newline='', encoding='utf8') as file:
