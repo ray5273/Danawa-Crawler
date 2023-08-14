@@ -70,4 +70,7 @@ jobs:
         fi
 
         git remote add target https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/ray5273/Danawa-Crawler.git
-        git push target master
+        git fetch
+        git branch -r
+        git checkout -b crawling-data/test origin/crawling-data/test
+        git push target crawling-data/test
