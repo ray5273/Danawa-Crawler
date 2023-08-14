@@ -61,8 +61,14 @@ jobs:
         git commit -m "Bot - Auto Crawl | $(date -d '+9 hour' +'%Y-%m-%d %H:%M:%S')"
     - name: Push
       run: |
-        git config --global user.name "sanghyeok"
+        git config --global user.name "Auto_crawler_bot"
         git config --global user.email "ray5273@naver.com"
+        
+        # remote가 존재하는지 확인
+        if git remote | grep target > /dev/null; then
+          git remote remove target
+        fi
+
         git remote add target https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/ray5273/Danawa-Crawler.git
         git push target feature/fork-action-test
         
