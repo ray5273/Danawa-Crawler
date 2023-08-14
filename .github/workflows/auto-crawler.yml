@@ -55,16 +55,7 @@ jobs:
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
     - name: Commits
       run: |
-        git config --local user.email "ray5273@naver.com"
-        git config --local user.name "Auto_Crawler_Bot"
-        git add --all
-        git commit -m "Bot - Auto Crawl | $(date -d '+9 hour' +'%Y-%m-%d %H:%M:%S')"
-    - name: Push
-      run: |
-        git config --global user.name "Auto_crawler_bot"
-        git config --global user.email "ray5273@naver.com"
-        
-        # remote가 존재하는지 확인
+       # remote가 존재하는지 확인
         if git remote | grep target > /dev/null; then
           git remote remove target
         fi
@@ -73,4 +64,13 @@ jobs:
         git fetch
         git branch -r
         git checkout -b crawling-data/test origin/crawling-data/test
+        
+        git config --local user.email "ray5273@naver.com"
+        git config --local user.name "Auto_Crawler_Bot"
+        git add --all
+        git commit -m "Bot - Auto Crawl | $(date -d '+9 hour' +'%Y-%m-%d %H:%M:%S')"
+    - name: Push
+      run: |
+        git config --global user.name "Auto_crawler_bot"
+        git config --global user.email "ray5273@naver.com"
         git push target crawling-data/test
