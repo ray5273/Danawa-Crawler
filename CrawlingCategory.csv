@@ -1,7 +1,3 @@
 // Name, URL, Crawling Page Size
-CPU, "http://prod.danawa.com/list/?cate=112747", 4
-RAM, "http://prod.danawa.com/list/?cate=112752", 10
-SSD, "http://prod.danawa.com/list/?cate=112760", 5
-Monitor, "http://prod.danawa.com/list/?cate=112757", 25
-Speaker, "http://prod.danawa.com/list/?cate=112808", 20
-Headphone, "http://prod.danawa.com/list/?cate=113837", 10
+TV, "https://prod.danawa.com/list/?cate=1022811&searchOption=searchMaker=702/innerSearchKeyword=",20
+Refrigerator, "https://prod.danawa.com/list/?cate=102110&searchOption=searchMaker=702/innerSearchKeyword=",20
