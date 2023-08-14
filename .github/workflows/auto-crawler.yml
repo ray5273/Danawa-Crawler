@@ -44,10 +44,15 @@ jobs:
         else
           echo 'chromedriver already exist!'
         fi
+    - name: Add to PATH
+      run: |
+        echo "$(pwd)" >> $GITHUB_PATH
+        echo $PATH
     - name: Run Crawler
       run: |
         python danawa_crawler.py
       env:
+        
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
     - name: Commits
       run: |
