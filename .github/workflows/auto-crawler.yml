@@ -63,7 +63,7 @@ jobs:
         git remote add target https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/ray5273/Danawa-Crawler.git
         git fetch
         git branch -r
-        git checkout -b crawling-data/test origin/crawling-data/test
+        git checkout -b crawling-data/data origin/crawling-data/data
         
         git config --local user.email "ray5273@naver.com"
         git config --local user.name "Auto_Crawler_Bot"
