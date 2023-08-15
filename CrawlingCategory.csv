@@ -1,3 +1,13 @@
 // Name, URL, Crawling Page Size
 TV, "https://prod.danawa.com/list/?cate=1022811&searchOption=searchMaker=702/innerSearchKeyword=",20
-Refrigerator, "https://prod.danawa.com/list/?cate=102110&searchOption=searchMaker=702/innerSearchKeyword=",20
+Refrigerator, "https://prod.danawa.com/list/?cate=12215657&searchOption=searchMaker=702/innerSearchKeyword=",20
+SmartPhone, "https://prod.danawa.com/list/?cate=12215709&searchOption=searchMaker=702/innerSearchKeyword=",3
+Tablet, "https://prod.danawa.com/list/?cate=12210596&searchOption=searchMaker=702/innerSearchKeyword=", 10
+SmartWatch, "https://prod.danawa.com/list/?cate=12215657&searchOption=searchMaker=702/innerSearchKeyword=",4
+Washer, "https://prod.danawa.com/list/?cate=102206&searchOption=searchMaker=702/innerSearchKeyword=", 15
+Cleaner, "https://prod.danawa.com/list/?cate=102206&searchOption=searchMaker=702/innerSearchKeyword=", 10
+RobotCleaner, "https://prod.danawa.com/list/?cate=10243069&searchOption=searchMaker=702/innerSearchKeyword=",1
+Dryer,"https://prod.danawa.com/list/?cate=10243069&searchOption=searchMaker=702/innerSearchKeyword=",12
+Earphone,"https://prod.danawa.com/list/?cate=12237349&searchOption=searchMaker=702/innerSearchKeyword=",1
+AirConditioner,"https://prod.danawa.com/list/?cate=1022644&searchOption=searchMaker=702/innerSearchKeyword=",20
+SSD,"https://prod.danawa.com/list/?cate=1022644&searchOption=searchMaker=702/innerSearchKeyword=",4
